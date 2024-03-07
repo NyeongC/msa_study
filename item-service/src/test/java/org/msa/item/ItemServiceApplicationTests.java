@@ -1,4 +1,4 @@
-package org.mas.item;
+package org.msa.item;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
