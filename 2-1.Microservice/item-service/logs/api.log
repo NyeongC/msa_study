@@ -1,0 +1,35 @@
+2024-06-03T22:15:18.648+09:00  INFO 5500 --- [restartedMain] org.msa.item.ItemServiceApplication      : Starting ItemServiceApplication using Java 17.0.11 with PID 5500 (C:\Users\cjfsu\eclipse-workspace\2-1.Microservice\item-service\bin\main started by cjfsu in C:\Users\cjfsu\eclipse-workspace\2-1.Microservice\item-service)
+2024-06-03T22:15:18.651+09:00 DEBUG 5500 --- [restartedMain] org.msa.item.ItemServiceApplication      : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-03T22:15:18.651+09:00  INFO 5500 --- [restartedMain] org.msa.item.ItemServiceApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-06-03T22:15:18.716+09:00  INFO 5500 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-03T22:15:18.717+09:00  INFO 5500 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-03T22:15:20.041+09:00  INFO 5500 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-03T22:15:20.063+09:00  INFO 5500 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-03T22:15:20.064+09:00  INFO 5500 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-03T22:15:20.184+09:00  INFO 5500 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-03T22:15:20.184+09:00  INFO 5500 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1467 ms
+2024-06-03T22:15:20.612+09:00  INFO 5500 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-06-03T22:15:20.645+09:00  INFO 5500 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-03T22:15:20.657+09:00  INFO 5500 --- [restartedMain] org.msa.item.ItemServiceApplication      : Started ItemServiceApplication in 2.483 seconds (process running for 3.285)
+2024-06-03T22:16:21.455+09:00  INFO 5500 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-03T22:16:21.455+09:00  INFO 5500 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-03T22:16:21.456+09:00  INFO 5500 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-06-03T22:16:21.497+09:00  WARN 5500 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<org.msa.item.dto.ResponseDTO> org.msa.item.cotroller.ItemController.add(org.msa.item.dto.ItemDTO)]
+2024-06-03T22:16:42.353+09:00 DEBUG 5500 --- [http-nio-8080-exec-3] org.msa.item.cotroller.ItemController    : requset add item id = 123
+2024-06-03T22:22:18.741+09:00  INFO 16008 --- [restartedMain] org.msa.item.ItemServiceApplication      : Starting ItemServiceApplication using Java 17.0.11 with PID 16008 (C:\Users\cjfsu\Desktop\msa_study\2-1.Microservice\item-service\bin\main started by cjfsu in C:\Users\cjfsu\Desktop\msa_study\2-1.Microservice\item-service)
+2024-06-03T22:22:18.743+09:00 DEBUG 16008 --- [restartedMain] org.msa.item.ItemServiceApplication      : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-03T22:22:18.744+09:00  INFO 16008 --- [restartedMain] org.msa.item.ItemServiceApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-06-03T22:22:18.801+09:00  INFO 16008 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-03T22:22:18.802+09:00  INFO 16008 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-03T22:22:19.878+09:00  INFO 16008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-03T22:22:19.893+09:00  INFO 16008 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-03T22:22:19.893+09:00  INFO 16008 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-03T22:22:19.946+09:00  INFO 16008 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-03T22:22:19.947+09:00  INFO 16008 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1144 ms
+2024-06-03T22:22:20.313+09:00  INFO 16008 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-06-03T22:22:20.345+09:00  INFO 16008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-03T22:22:20.355+09:00  INFO 16008 --- [restartedMain] org.msa.item.ItemServiceApplication      : Started ItemServiceApplication in 2.067 seconds (process running for 2.801)
+2024-06-03T22:22:23.803+09:00  INFO 16008 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-03T22:22:23.804+09:00  INFO 16008 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-03T22:22:23.806+09:00  INFO 16008 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-06-03T22:22:23.917+09:00 DEBUG 16008 --- [http-nio-8080-exec-2] org.msa.item.cotroller.ItemController    : requset add item id = 123
