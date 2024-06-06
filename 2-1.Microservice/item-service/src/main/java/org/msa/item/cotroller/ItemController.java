@@ -1,5 +1,6 @@
 package org.msa.item.cotroller;
 
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.msa.item.dto.ItemDTO;
 import org.msa.item.dto.ResponseDTO;
@@ -21,7 +22,7 @@ public class ItemController {
 	private final ItemService itemService;
 	
 	@RequestMapping(value="/add", method = RequestMethod.POST)
-	public ResponseEntity<ResponseDTO> add(@RequestBody ItemDTO itemDTO) {
+	public ResponseEntity<ResponseDTO> add(@Valid @RequestBody ItemDTO itemDTO) {
 		ResponseDTO.ResponseDTOBuilder responseBuilder = ResponseDTO.builder();
 
 
