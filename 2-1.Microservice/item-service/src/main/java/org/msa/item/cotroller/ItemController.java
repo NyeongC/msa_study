@@ -24,6 +24,22 @@ public class ItemController {
 	public ResponseEntity<ResponseDTO> add(@Valid @RequestBody ItemDTO itemDTO, @PathVariable String itemType) {
 		ResponseDTO.ResponseDTOBuilder responseBuilder = ResponseDTO.builder();
 
+		log.debug("path.variable itemType = {}", itemType);
+		boolean hasItemType = false;
+		ItemType [] itemTypeList = ItemType.values();
+		for(ItemType i : itemTypeList) {
+			if (i.hasItemCd(itemType)) {
+				hasItemType = true;
+				break; // ItemType을 찾았으면 루프를 종료합니다.
+			}
+		}
+
+		if(!hasItemType) {
+			responseBuilder.code("500").message("invalid itemType .[" + itemType + "]");
+			return ResponseEntity.ok(responseBuilder.build());
+		}else {
+			itemDTO.setItemType(itemType);
+		}
 
 		itemDTO.setItemType(itemType);
 		itemService.insertItem(itemDTO);
