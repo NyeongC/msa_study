@@ -22,4 +22,6 @@ public class ItemDTO {
 
 	private String regDts;
 	private String updDts;
+
+	private String itemType;
 }

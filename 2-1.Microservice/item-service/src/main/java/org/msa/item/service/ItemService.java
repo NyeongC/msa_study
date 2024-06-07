@@ -26,6 +26,7 @@ public class ItemService {
                 .count(itemDTO.getCount())
                 .regDts(date)
                 .updDts(date)
+                .itemType(itemDTO.getItemType())
                 .build();
         itemRepository.save(item);
     }

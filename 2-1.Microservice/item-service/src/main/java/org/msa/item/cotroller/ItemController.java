@@ -2,14 +2,13 @@ package org.msa.item.cotroller;
 
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import org.msa.item.domain.Item;
 import org.msa.item.dto.ItemDTO;
 import org.msa.item.dto.ResponseDTO;
+import org.msa.item.dto.constant.ItemType;
 import org.msa.item.service.ItemService;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -21,11 +20,12 @@ public class ItemController {
 
 	private final ItemService itemService;
 	
-	@RequestMapping(value="/add", method = RequestMethod.POST)
-	public ResponseEntity<ResponseDTO> add(@Valid @RequestBody ItemDTO itemDTO) {
+	@RequestMapping(value="/add/{itemType}", method = RequestMethod.POST)
+	public ResponseEntity<ResponseDTO> add(@Valid @RequestBody ItemDTO itemDTO, @PathVariable String itemType) {
 		ResponseDTO.ResponseDTOBuilder responseBuilder = ResponseDTO.builder();
 
 
+		itemDTO.setItemType(itemType);
 		itemService.insertItem(itemDTO);
 		log.debug("requset add item id = {}", itemDTO.getId());
 		
