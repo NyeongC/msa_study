@@ -1,6 +1,6 @@
 logging:
   file:
-    name: logs/api-local.log
+    name: logs/api-local3.log
     max-size: 500MB
     max-history: 10
   level:

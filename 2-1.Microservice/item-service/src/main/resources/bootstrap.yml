@@ -11,3 +11,10 @@ spring:
     loadbalancer:
       ribbon:
         enabled: false
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh, health, beans
