@@ -4,7 +4,7 @@ spring:
   application:
     name: item-service
   profiles:
-    active: local
+    active: local # 이거에 따라서 config-server의 참조하는 설정파일이 달라짐
   cloud:
     config:
       uri: http://localhost:8080
